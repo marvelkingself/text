@@ -224,6 +224,10 @@
             animation: shake 3s;
             animation-iteration-count: infinite;
         }
+        .whats{
+            animation: shake 3s;
+            animation-iteration-count: infinite;
+        }
 
         @keyframes shake {
             0% {
@@ -583,46 +587,50 @@
     <!-- welcome_docmed_area_start -->
     <div class="welcome_docmed_area" style="padding-top:40px;padding-bottom:30px;background-color:#f9f7f7">
         <h1>
-            <center style="color:#ff5722;">हमारे द्वारा सही हुए मरीजों की कॉल....</center>
+            <center style="color:#ff5722;">दुनिया भर के हजारों विशेषज्ञों द्वारा भरोसा....</center>
         </h1>
 
         <div class="container">
             <div class="row">
 
 
-                <div class="col-xl-4 col-lg-4">
-                    <div class="welcome_thumb" style="padding:10px;">
-                        <div class="thumb_1 card-4">
-                            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/3u4RK1pruOw?si=yfqA43ZiDSqlYmVX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="col-xl-3 col-lg-3 col-sm-6 " style="@media only screen and (max-width: 600px) {
+                    width: 50%;
+                }
+                  ">
+                    <div class="welcome_thumb" style="padding:10px; ">
+                        <div class="thumb_1 ">
+                            <img src="img/Lab.jpg " alt="" class="lab" >
 
                         </div>
 
                     </div>
                 </div>
 
-                <div class="col-xl-4 col-lg-4">
-                    <div class="welcome_thumb" style="padding:10px;">
-                        <div class="thumb_1 card-4">
-                            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/LCnTtjJ3OZQ?si=huWJh3HPpbQt1xdi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="col-xl-3 col-lg-3 col-sm-6 ">
+                    <div class="welcome_thumb" style="padding:10px;  ">
+                        <div class="thumb_1 ">
+                            <img src="img/gmp.png " alt="">
 
                         </div>
 
                     </div>
                 </div>
 
-                
-
-                
-
-                
-
-                
-
-
-                <div class="col-xl-4 col-lg-4">
+                <div class="col-xl-3 col-lg-3 col-sm-6 ">
                     <div class="welcome_thumb" style="padding:10px;">
-                        <div class="thumb_1 card-4">
-                            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/oYSO0QUzzOM?si=0vZf3LX3QbI7IimX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <div class="thumb_1 ">
+                            <img src="img/aayush.png " alt="">
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-sm-6">
+                    <div class="welcome_thumb" style="padding:10px;">
+                        <div class="thumb_1 ">
+                            <img src="img/orga.jpg " alt="">
 
                         </div>
 
@@ -639,7 +647,7 @@
 
 
 
-    <div><img src="img/new.jpeg" style="width: 100%;" class="img-fluid" alt="Responsive image"></div>
+    <!-- <div><img src="img/new.jpeg" style="width: 100%;" class="img-fluid" alt="Responsive image"></div> -->
 
 
 
@@ -838,17 +846,14 @@
 
     <style>
         .fixed_footer {
-            background: #FF5722;
-            background: -moz-linear-gradient(left, #FF5722 0%, #FF9800 100%);
-            background: -webkit-linear-gradient(left, #FF5722 0%, #FF9800 100%);
-            background: linear-gradient(to right, #FF5722 0%, #FF9800 100%);
+            
             position: fixed;
             padding: 10px;
-            left: 0;
-            bottom: 0;
+            right: 20px;
+            bottom: 50px;
             width: 100%;
             color: white;
-            text-align: center;
+            text-align: right;
         }
     </style>
     <!-- footer start -->
@@ -949,10 +954,9 @@
 
 
         <div class="fixed_footer" style="padding-bottom:5px;">
-
-            <a href="tel:8383801254" class="call_now_image" id="call_now_button"> <img src="img/call_now.png"
-                    height="50px;"></a>
-
+            <img src="img/whatsapp.png" alt="" style="width: 50px; margin: 10px;" class="whats" ><br>
+            <img src="img/telephone.png" alt="" style="width: 50px; margin: 10px; " class="whats">
+            
         </div>
 
 
@@ -969,10 +973,10 @@
 
             Email.send({
                 Host: 'smtp.elasticemail.com',
-                Username: 'Barunkhan1234@gmail.com',
-                Password: '96BF3FFDDB0B9A0CC452E2E92BC724BB6D82',
+                Username: 'abdulbaroon0@gmail.com',
+                Password: '',
                 To: "abdul.baroon0@gmail.com",
-                From: "cureherbalaryuveda@gmail.com",
+                From: "barunkhan1234@gmail.com",
                 Subject: "This is the subject",
                 Body: "Name:-" + document.getElementById("user_name").value +
                     "<br> Mobile No:-" + document.getElementById("user_number").value +
