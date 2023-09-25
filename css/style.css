@@ -1374,6 +1374,8 @@ h3 {
   /* line 17, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_about.scss */
   .welcome_docmed_area .welcome_thumb .thumb_1 img {
     width: 50%;
+    text-align: center;
+    margin-left: 101px;
     
   }
 }
