@@ -1375,13 +1375,13 @@ h3 {
   .welcome_docmed_area .welcome_thumb .thumb_1 img {
     width: 50%;
     text-align: center;
-    margin-left: 101px;
+    
     
   }
 }
 @media only screen and (max-width: 600px){
   .lab{
-    margin: 10px;
+    margin-left: 101px;
   }
 }
 
